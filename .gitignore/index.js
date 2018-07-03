@@ -16,9 +16,10 @@ bot.on('message', function (message){
 })
 
 //attribution des roles qu en quelqu un arrive sur le serveur 
-bot.on('guildMemberAdd', function(member){
-       message.member.addRole('test')
-       .then(console.log)
+bot.on('guildMemberAdd', function(channel){
+message.member.addRole('193654001089118208')
+  .then(console.log);
+
 
        }).catch(console.error)
 })
