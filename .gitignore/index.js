@@ -17,10 +17,13 @@ bot.on('message', function (message){
 
 //attribution des roles qu en quelqu un arrive sur le serveur 
 bot.on('guildMemberUpdate', function(member){
-    member.createDM().then(function(channel) {
-           return channel.send('Bienvenue sur le channel'+member.displayName)
+    message.member.addRole().then(function(channel) 
     }).catch(console.error)
 })
+
+
+
+
 //jeton 
 bot.login("NDYzNDE1MTg5MTY2MDk2Mzg0.DhwRHA.7YEuUgFCfgUHaCBQhstuyqo1f2Y");
 
