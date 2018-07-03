@@ -16,9 +16,15 @@ bot.on('message', function (message){
 })
 
 //attribution des roles qu en quelqu un arrive sur le serveur 
-message.member.addRole('test')
-  .then(console.log)
-  .catch(console.error);
+bot.on('guildMemberAdd', function(member){
+       message.member.addRole('test')
+       .then(console.log)
+
+       }).catch(console.error)
+})
+
+
+
 
 //jeton 
 bot.login("NDYzNDE1MTg5MTY2MDk2Mzg0.DhwRHA.7YEuUgFCfgUHaCBQhstuyqo1f2Y");
