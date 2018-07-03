@@ -8,6 +8,7 @@ bot.on('guildMemberAdd', function(member){
               return channel.send('Bienvenue sur le channel  '+member.displayName)
        }).catch(console.error)
 })
+
 // enoi d un message pinf reponse pong
 bot.on('message', function (message){
        if (message.content ==='!ping'){
@@ -16,10 +17,10 @@ bot.on('message', function (message){
 })
 
 //attribution des roles qu en quelqu un arrive sur le serveur 
-bot.on('guildMemberAdd', function(channel){
+bot.on('guildMemberAdd', function(member){
 message.member.addRole('193654001089118208')
-  .then(console.log);
-
+  .then(console.log)
+       return channel.setRoles(member)
 
        }).catch(console.error)
 })
