@@ -17,13 +17,6 @@ bot.on('message', function (message){
 })
 
 //attribution des roles qu en quelqu un arrive sur le serveur 
-bot.on('guildMemberAdd', function(member){
-message.member.addRole('193654001089118208')
-  .then(console.log)
-       return channel.setRoles(member)
-
-       }).catch(console.error)
-})
 
 
 
