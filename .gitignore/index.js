@@ -22,7 +22,7 @@ bot.on('message', function (message){
 
 
 //jeton 
-bot.login("NDYzNDE1MTg5MTY2MDk2Mzg0.DhwRHA.7YEuUgFCfgUHaCBQhstuyqo1f2Y");
+bot.login("NDYzNDE1MTg5MTY2MDk2Mzg0.Dh5sRA.OGPL0qbTbMEavLacBOghgRPWkVU");
 
 
 
